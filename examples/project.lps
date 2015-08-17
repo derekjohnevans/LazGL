@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="9"/>
+    <BuildModes Active="Default"/>
+    <Units Count="91">
+      <Unit0>
+        <Filename Value="project.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="45"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="unitmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="FormMain"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="UnitMain"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="42"/>
+        <CursorPos X="3" Y="66"/>
+        <UsageCount Value="45"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="..\lazgltexture.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LazGLTexture"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="81"/>
+        <CursorPos Y="103"/>
+        <UsageCount Value="34"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="..\lazgl.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LazGL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="151"/>
+        <CursorPos X="3" Y="157"/>
+        <UsageCount Value="34"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LazGLCanvas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="247"/>
+        <CursorPos X="45" Y="238"/>
+        <UsageCount Value="34"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="..\lazglcontrol.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LazGLControl"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="40"/>
+        <CursorPos X="14" Y="62"/>
+        <UsageCount Value="34"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="..\lazgltests.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="LazGLTests"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="196"/>
+        <CursorPos X="17" Y="192"/>
+        <UsageCount Value="32"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="..\src\lazglcontrol.pas"/>
+        <UnitName Value="LazGLControl"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="42"/>
+        <CursorPos X="40" Y="27"/>
+        <UsageCount Value="31"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="..\src\lazgl.pas"/>
+        <UnitName Value="LazGL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="173"/>
+        <CursorPos X="48" Y="187"/>
+        <UsageCount Value="24"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="..\src\lazglcanvas.pas"/>
+        <UnitName Value="LazGLCanvas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <CursorPos X="15" Y="3"/>
+        <UsageCount Value="21"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="..\src\lazgltexture.pas"/>
+        <UnitName Value="LazGLTexture"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="81"/>
+        <CursorPos X="9" Y="16"/>
+        <UsageCount Value="21"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="C:\lazarus\components\opengl\openglcontext.pas"/>
+        <UnitName Value="OpenGLContext"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="137"/>
+        <CursorPos X="25" Y="150"/>
+        <UsageCount Value="10"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="C:\lazarus\lcl\controls.pp"/>
+        <UnitName Value="Controls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1304"/>
+        <CursorPos X="15" Y="1318"/>
+        <UsageCount Value="10"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="C:\lazarus\lcl\include\graphiccontrol.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="17" Y="23"/>
+        <UsageCount Value="9"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="C:\lazarus\lcl\extctrls.pp"/>
+        <UnitName Value="ExtCtrls"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="978"/>
+        <CursorPos X="38" Y="992"/>
+        <UsageCount Value="9"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\fpcanvas.pp"/>
+        <UnitName Value="FPCanvas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="193"/>
+        <CursorPos X="17" Y="211"/>
+        <UsageCount Value="10"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\gl.pp"/>
+        <UnitName Value="GL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="140"/>
+        <CursorPos X="3" Y="154"/>
+        <UsageCount Value="11"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="C:\lazarus\lcl\graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1192"/>
+        <CursorPos X="5" Y="1205"/>
+        <UsageCount Value="15"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="C:\lazarus\lcl\include\canvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1178"/>
+        <CursorPos X="23" Y="1184"/>
+        <UsageCount Value="13"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\fpcanvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="342"/>
+        <CursorPos X="31" Y="356"/>
+        <UsageCount Value="10"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="C:\lazarus\lcl\graphutil.pp"/>
+        <UnitName Value="GraphUtil"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="462"/>
+        <CursorPos X="14" Y="465"/>
+        <UsageCount Value="11"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="C:\lazarus\lcl\include\custombitmap.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="16" Y="57"/>
+        <UsageCount Value="9"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="C:\lazarus\lcl\include\rasterimage.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="295"/>
+        <CursorPos X="31" Y="308"/>
+        <UsageCount Value="9"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\classes\classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="341"/>
+        <CursorPos X="14" Y="358"/>
+        <UsageCount Value="10"/>
+      </Unit23>
+      <Unit24>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\classes\persist.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="79"/>
+        <CursorPos X="3" Y="54"/>
+        <UsageCount Value="9"/>
+      </Unit24>
+      <Unit25>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\objpash.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="180"/>
+        <CursorPos X="27" Y="194"/>
+        <UsageCount Value="9"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\objpas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="260"/>
+        <CursorPos X="9" Y="271"/>
+        <UsageCount Value="9"/>
+      </Unit26>
+      <Unit27>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-base\src\fpobserver.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="554"/>
+        <CursorPos X="31" Y="577"/>
+        <UsageCount Value="9"/>
+      </Unit27>
+      <Unit28>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\systemh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="316"/>
+        <CursorPos X="3" Y="330"/>
+        <UsageCount Value="9"/>
+      </Unit28>
+      <Unit29>
+        <Filename Value="C:\wascal.net\dev\geep\geep.g.gl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="67"/>
+        <CursorPos X="103" Y="87"/>
+        <UsageCount Value="9"/>
+      </Unit29>
+      <Unit30>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\glu.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="308"/>
+        <CursorPos X="25" Y="319"/>
+        <UsageCount Value="9"/>
+      </Unit30>
+      <Unit31>
+        <Filename Value="C:\lazarus\lcl\include\winapih.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="86"/>
+        <CursorPos X="23" Y="82"/>
+        <UsageCount Value="10"/>
+      </Unit31>
+      <Unit32>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\fphelper.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="3" Y="107"/>
+        <UsageCount Value="9"/>
+      </Unit32>
+      <Unit33>
+        <Filename Value="C:\lazarus\lcl\include\bitmapcanvas.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6"/>
+        <CursorPos X="33" Y="24"/>
+        <UsageCount Value="9"/>
+      </Unit33>
+      <Unit34>
+        <Filename Value="C:\lazarus\components\opengl\glwin32wglcontext.pas"/>
+        <UnitName Value="GLWin32WGLContext"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="11" Y="20"/>
+        <UsageCount Value="9"/>
+      </Unit34>
+      <Unit35>
+        <Filename Value="C:\lazarus\lcl\graphtype.pp"/>
+        <UnitName Value="GraphType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="12" Y="44"/>
+        <UsageCount Value="10"/>
+      </Unit35>
+      <Unit36>
+        <Filename Value="C:\lazarus\lcl\lcltype.pp"/>
+        <UnitName Value="LCLType"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1630"/>
+        <CursorPos X="12" Y="1644"/>
+        <UsageCount Value="9"/>
+      </Unit36>
+      <Unit37>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\glext.pp"/>
+        <UnitName Value="GLext"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="10"/>
+      </Unit37>
+      <Unit38>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\glut.pp"/>
+        <UnitName Value="Glut"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="403"/>
+        <CursorPos X="31" Y="13"/>
+        <UsageCount Value="10"/>
+      </Unit38>
+      <Unit39>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\freeglut.pp"/>
+        <UnitName Value="FreeGlut"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="149"/>
+        <UsageCount Value="10"/>
+      </Unit39>
+      <Unit40>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\glx.pp"/>
+        <UnitName Value="GLX"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="665"/>
+        <UsageCount Value="10"/>
+      </Unit40>
+      <Unit41>
+        <Filename Value="C:\lazarus\lcl\lclintf.pas"/>
+        <UnitName Value="LCLIntf"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="27"/>
+        <UsageCount Value="10"/>
+      </Unit41>
+      <Unit42>
+        <Filename Value="C:\lazarus\components\customdrawn\customdrawn_wince.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="102"/>
+        <CursorPos X="14" Y="115"/>
+        <UsageCount Value="10"/>
+      </Unit42>
+      <Unit43>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\morphos\graphics.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2186"/>
+        <CursorPos X="40" Y="2199"/>
+        <UsageCount Value="10"/>
+      </Unit43>
+      <Unit44>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\univint\src\HITheme.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4310"/>
+        <CursorPos X="13" Y="4324"/>
+        <UsageCount Value="10"/>
+      </Unit44>
+      <Unit45>
+        <Filename Value="C:\lazarus\lcl\customdrawn_common.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="37"/>
+        <CursorPos X="35" Y="49"/>
+        <UsageCount Value="13"/>
+      </Unit45>
+      <Unit46>
+        <Filename Value="C:\lazarus\lcl\include\intfbasewinapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="330"/>
+        <CursorPos X="21" Y="344"/>
+        <UsageCount Value="10"/>
+      </Unit46>
+      <Unit47>
+        <Filename Value="C:\lazarus\lcl\interfaces\customdrawn\customdrawnwinapi.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="6007"/>
+        <CursorPos X="44" Y="1077"/>
+        <UsageCount Value="10"/>
+      </Unit47>
+      <Unit48>
+        <Filename Value="C:\lazarus\components\aggpas\src\Agg2D.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2355"/>
+        <CursorPos X="2" Y="2363"/>
+        <UsageCount Value="10"/>
+      </Unit48>
+      <Unit49>
+        <Filename Value="C:\lazarus\components\IndustrialStuff\source\indcyGraphics.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="54"/>
+        <CursorPos X="20" Y="66"/>
+        <UsageCount Value="10"/>
+      </Unit49>
+      <Unit50>
+        <Filename Value="C:\lazarus\components\tachart\tadrawercanvas.pas"/>
+        <UnitName Value="TADrawerCanvas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="435"/>
+        <CursorPos X="16" Y="139"/>
+        <UsageCount Value="10"/>
+      </Unit50>
+      <Unit51>
+        <Filename Value="C:\lazarus\components\tachart\tadraweropengl.pas"/>
+        <UnitName Value="TADrawerOpenGL"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="4"/>
+        <CursorPos X="16" Y="200"/>
+        <UsageCount Value="10"/>
+      </Unit51>
+      <Unit52>
+        <Filename Value="C:\lazarus\components\tachart\tageometry.pas"/>
+        <UnitName Value="TAGeometry"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="845"/>
+        <CursorPos X="3" Y="849"/>
+        <UsageCount Value="10"/>
+      </Unit52>
+      <Unit53>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\fpimage.pp"/>
+        <UnitName Value="FPimage"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos X="11" Y="33"/>
+        <UsageCount Value="10"/>
+      </Unit53>
+      <Unit54>
+        <Filename Value="C:\lazarus\components\customdrawn\customdrawn_windows7.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="50"/>
+        <CursorPos X="19" Y="58"/>
+        <UsageCount Value="10"/>
+      </Unit54>
+      <Unit55>
+        <Filename Value="C:\lazarus\lcl\customdrawn_winxp.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="359"/>
+        <CursorPos X="26" Y="19"/>
+        <UsageCount Value="10"/>
+      </Unit55>
+      <Unit56>
+        <Filename Value="C:\lazarus\lcl\customdrawndrawers.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="200"/>
+        <CursorPos X="3" Y="213"/>
+        <UsageCount Value="10"/>
+      </Unit56>
+      <Unit57>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\ellipses.pp"/>
+        <UnitName Value="Ellipses"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="527"/>
+        <CursorPos X="40" Y="22"/>
+        <UsageCount Value="10"/>
+      </Unit57>
+      <Unit58>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\fpcdrawh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="9" Y="29"/>
+        <UsageCount Value="10"/>
+      </Unit58>
+      <Unit59>
+        <Filename Value="C:\lazarus\lcl\include\lclintfh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="104"/>
+        <CursorPos X="15" Y="67"/>
+        <UsageCount Value="10"/>
+      </Unit59>
+      <Unit60>
+        <Filename Value="C:\lazarus\lcl\include\intfbaselcl.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="338"/>
+        <CursorPos X="3" Y="344"/>
+        <UsageCount Value="10"/>
+      </Unit60>
+      <Unit61>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\GLSLBumpShader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="402"/>
+        <CursorPos X="31" Y="415"/>
+        <UsageCount Value="10"/>
+      </Unit61>
+      <Unit62>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\EditorForGLShader.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="553"/>
+        <CursorPos X="15" Y="582"/>
+        <UsageCount Value="10"/>
+      </Unit62>
+      <Unit63>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\Bass.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="22"/>
+        <UsageCount Value="10"/>
+      </Unit63>
+      <Unit64>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\GLCanvas.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="820"/>
+        <CursorPos X="9" Y="675"/>
+        <UsageCount Value="10"/>
+      </Unit64>
+      <Unit65>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\GLContext.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="113"/>
+        <CursorPos X="17" Y="127"/>
+        <UsageCount Value="10"/>
+      </Unit65>
+      <Unit66>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\GLVectorTypes.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="29"/>
+        <UsageCount Value="10"/>
+      </Unit66>
+      <Unit67>
+        <Filename Value="C:\codetyphon\typhon\components\pl_GLScene\source\GLVectorGeometry.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="11835"/>
+        <UsageCount Value="10"/>
+      </Unit67>
+      <Unit68>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\sysstrh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="99"/>
+        <CursorPos X="16" Y="113"/>
+        <UsageCount Value="11"/>
+      </Unit68>
+      <Unit69>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\sysutils\sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="798"/>
+        <CursorPos Y="801"/>
+        <UsageCount Value="10"/>
+      </Unit69>
+      <Unit70>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\win\sysutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1189"/>
+        <CursorPos X="41" Y="9"/>
+        <UsageCount Value="10"/>
+      </Unit70>
+      <Unit71>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\astrings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="21"/>
+        <CursorPos X="100" Y="844"/>
+        <UsageCount Value="10"/>
+      </Unit71>
+      <Unit72>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\generic.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2442"/>
+        <UsageCount Value="10"/>
+      </Unit72>
+      <Unit73>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\x86_64\strings.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="173"/>
+        <UsageCount Value="10"/>
+      </Unit73>
+      <Unit74>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\x86_64\math.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="113"/>
+        <CursorPos X="34" Y="136"/>
+        <UsageCount Value="10"/>
+      </Unit74>
+      <Unit75>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\wince\sysutils.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="525"/>
+        <CursorPos X="3" Y="539"/>
+        <UsageCount Value="10"/>
+      </Unit75>
+      <Unit76>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\darwin\extres_multiarch.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="113"/>
+        <CursorPos X="7" Y="133"/>
+        <UsageCount Value="10"/>
+      </Unit76>
+      <Unit77>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\extres.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="106"/>
+        <CursorPos X="7" Y="126"/>
+        <UsageCount Value="10"/>
+      </Unit77>
+      <Unit78>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\rtti.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="19"/>
+        <UsageCount Value="10"/>
+      </Unit78>
+      <Unit79>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\system.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="88"/>
+        <CursorPos X="59" Y="40"/>
+        <UsageCount Value="10"/>
+      </Unit79>
+      <Unit80>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\inc\strings.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="149"/>
+        <UsageCount Value="10"/>
+      </Unit80>
+      <Unit81>
+        <Filename Value="C:\codetyphon\fpcsrc\tests\tbs\tb0336.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="15"/>
+        <CursorPos X="4" Y="29"/>
+        <UsageCount Value="10"/>
+      </Unit81>
+      <Unit82>
+        <Filename Value="C:\codetyphon\fpcsrc\utils\tply\lexpos.pas"/>
+        <UnitName Value="LexPos"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="113"/>
+        <CursorPos X="10" Y="141"/>
+        <UsageCount Value="10"/>
+      </Unit82>
+      <Unit83>
+        <Filename Value="C:\codetyphon\typhon\components\pl_Indy\source\IdFiber.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="174"/>
+        <CursorPos X="27" Y="188"/>
+        <UsageCount Value="10"/>
+      </Unit83>
+      <Unit84>
+        <Filename Value="C:\codetyphon\typhon\components\pl_Indy\source\IdThreadSafe.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="690"/>
+        <CursorPos X="3" Y="700"/>
+        <UsageCount Value="10"/>
+      </Unit84>
+      <Unit85>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-stl\src\ghashmap.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="117"/>
+        <CursorPos X="13" Y="26"/>
+        <UsageCount Value="10"/>
+      </Unit85>
+      <Unit86>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-stl\tests\ghashmaptest.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="63"/>
+        <CursorPos X="24" Y="73"/>
+        <UsageCount Value="10"/>
+      </Unit86>
+      <Unit87>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-stl\doc\hashmapexample.pp"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos X="103" Y="11"/>
+        <UsageCount Value="10"/>
+      </Unit87>
+      <Unit88>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\fcl-image\src\fpinterpolation.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="231"/>
+        <CursorPos X="3" Y="246"/>
+        <UsageCount Value="10"/>
+      </Unit88>
+      <Unit89>
+        <Filename Value="C:\lazarus\lcl\graphmath.pp"/>
+        <UnitName Value="GraphMath"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="764"/>
+        <CursorPos X="10" Y="778"/>
+        <UsageCount Value="11"/>
+      </Unit89>
+      <Unit90>
+        <Filename Value="C:\lazarus\fpc\2.6.4\source\rtl\objpas\types.pp"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="286"/>
+        <CursorPos X="21" Y="300"/>
+        <UsageCount Value="10"/>
+      </Unit90>
+    </Units>
+    <JumpHistory HistoryIndex="-1"/>
+  </ProjectSession>
+</CONFIG>

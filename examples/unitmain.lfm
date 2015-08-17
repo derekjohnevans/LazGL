@@ -1,0 +1,29 @@
+object FormMain: TFormMain
+  Left = 299
+  Height = 439
+  Top = 202
+  Width = 825
+  ClientHeight = 439
+  ClientWidth = 825
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '1.4.2.0'
+  object StatusBar: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 416
+    Width = 825
+    Panels = <>
+  end
+  object PanelClient: TPanel
+    Left = 0
+    Height = 416
+    Top = 0
+    Width = 825
+    Align = alClient
+    BevelOuter = bvNone
+    BorderStyle = bsSingle
+    TabOrder = 1
+    OnResize = PanelClientResize
+  end
+end
