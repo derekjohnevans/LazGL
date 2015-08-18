@@ -1,3 +1,20 @@
+(*
+Copyright (C) 2015 Derek John Evans
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*)
+
 unit LazGL;
 
 {$MODE DELPHI}
@@ -29,6 +46,7 @@ procedure lglDrawRectangle(const AMode: GLenum; const ARect: TRect);
 procedure lglDrawFocusRect(const ARect: TRect);
 procedure lglDrawArc(const AMode: GLenum; const ARect: TRect;
   AAngle16Deg, AAngle16DegLength: Integer);
+procedure lglRoundRect(const AMode: GLenum; const ARect: TRect; const X, Y: Integer);
 procedure lglDrawEllipse(const AMode: GLenum; const ARect: TRect);
 procedure lglDrawPolyline(const AMode: GLenum; const APoints: PPoint; const ACount: Integer);
 procedure lglDrawBitmap(const ABitmap: TBitmap; const ARect: TRect);
@@ -124,9 +142,9 @@ procedure lglDrawRectangle(const AMode: GLenum; const ARect: TRect);
 begin
   glBegin(AMode);
   glVertex2f(ARect.Left + 1, ARect.Top + 1);
-  glVertex2f(ARect.Right, ARect.Top + 1);
-  glVertex2f(ARect.Right, ARect.Bottom);
   glVertex2f(ARect.Left + 1, ARect.Bottom);
+  glVertex2f(ARect.Right, ARect.Bottom);
+  glVertex2f(ARect.Right, ARect.Top + 1);
   glEnd;
 end;
 
@@ -151,10 +169,9 @@ begin
   glEnd;
 end;
 
-procedure lglDrawArc(const AMode: GLenum; const ARect: TRect;
-  AAngle16Deg, AAngle16DegLength: Integer);
+procedure lglVertexArc(const ARect: TRect; AAngle16Deg, AAngle16DegLength: Integer);
+
 begin
-  glBegin(AMode);
   if AAngle16DegLength > 0 then begin
     while AAngle16DegLength > 0 do begin
       AAngle16DegLength -= 16;
@@ -168,6 +185,23 @@ begin
       lglVertex(RadialPoint(AAngle16Deg, ARect));
     end;
   end;
+end;
+
+procedure lglDrawArc(const AMode: GLenum; const ARect: TRect;
+  AAngle16Deg, AAngle16DegLength: Integer);
+begin
+  glBegin(AMode);
+  lglVertexArc(ARect, AAngle16Deg, AAngle16DegLength);
+  glEnd;
+end;
+
+procedure lglRoundRect(const AMode: GLenum; const ARect: TRect; const X, Y: Integer);
+begin
+  glBegin(AMode);
+  lglVertexArc(Bounds(ARect.Left, ARect.Top, X, Y), 90 * 16, 90 * 16);
+  lglVertexArc(Bounds(ARect.Left, ARect.Bottom - Y, X, Y), 180 * 16, 90 * 16);
+  lglVertexArc(Bounds(ARect.Right - X, ARect.Bottom - Y, X, Y), -90 * 16, 90 * 16);
+  lglVertexArc(Bounds(ARect.Right - X, ARect.Top, X, Y), 0, 90 * 16);
   glEnd;
 end;
 
@@ -189,7 +223,7 @@ begin
   end;
   glPixelZoom((ARect.Right - ARect.Left) / ABitmap.Width, -(ARect.Bottom - ARect.Top) /
     ABitmap.Height);
-  glRasterPos2f(ARect.Left, ARect.Top);
+  glRasterPos2i(ARect.Left, ARect.Top);
   glDrawPixels(ABitmap.Width, ABitmap.Height, lglGetPixelFormat(ABitmap.PixelFormat),
     GL_UNSIGNED_BYTE, ABitmap.RawImage.Data);
   glDisable(GL_BLEND);
@@ -205,12 +239,12 @@ begin
     glColor3f(1, 1, 1);
     glTexCoord2f(0, 0);
     glVertex2f(ARect.Left, ARect.Top);
-    glTexCoord2f(1, 0);
-    glVertex2f(ARect.Right, ARect.Top);
-    glTexCoord2f(1, 1);
-    glVertex2f(ARect.Right, ARect.Bottom);
     glTexCoord2f(0, 1);
     glVertex2f(ARect.Left, ARect.Bottom);
+    glTexCoord2f(1, 1);
+    glVertex2f(ARect.Right, ARect.Bottom);
+    glTexCoord2f(1, 0);
+    glVertex2f(ARect.Right, ARect.Top);
   finally
     glEnd;
     glDisable(GL_TEXTURE_2D);
@@ -231,6 +265,8 @@ begin
   glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
   //glEnable(GL_LINE_SMOOTH);
   //glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
+  //glFrontFace(GL_CCW);
+  //glEnable(GL_CULL_FACE);
 end;
 
 end.

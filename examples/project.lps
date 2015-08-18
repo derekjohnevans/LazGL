@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="45"/>
+        <UsageCount Value="47"/>
       </Unit0>
       <Unit1>
         <Filename Value="unitmain.pas"/>
@@ -21,10 +21,9 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="UnitMain"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="42"/>
-        <CursorPos X="3" Y="66"/>
-        <UsageCount Value="45"/>
+        <TopLine Value="34"/>
+        <CursorPos X="15" Y="58"/>
+        <UsageCount Value="47"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit1>
@@ -32,46 +31,52 @@
         <Filename Value="..\lazgltexture.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LazGLTexture"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="81"/>
-        <CursorPos Y="103"/>
-        <UsageCount Value="34"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="85"/>
+        <CursorPos X="5" Y="95"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
       </Unit2>
       <Unit3>
         <Filename Value="..\lazgl.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LazGL"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="151"/>
-        <CursorPos X="3" Y="157"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="7"/>
+        <TopLine Value="70"/>
+        <CursorPos X="8" Y="58"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
       </Unit3>
       <Unit4>
         <Filename Value="..\lazglcanvas.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LazGLCanvas"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="247"/>
-        <CursorPos X="45" Y="238"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="64"/>
+        <CursorPos X="32" Y="79"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
       </Unit4>
       <Unit5>
         <Filename Value="..\lazglcontrol.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LazGLControl"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="40"/>
-        <CursorPos X="14" Y="62"/>
-        <UsageCount Value="34"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="28"/>
+        <CursorPos X="21" Y="44"/>
+        <UsageCount Value="36"/>
+        <Loaded Value="True"/>
       </Unit5>
       <Unit6>
         <Filename Value="..\lazgltests.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="LazGLTests"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="196"/>
-        <CursorPos X="17" Y="192"/>
-        <UsageCount Value="32"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="189"/>
+        <CursorPos X="26" Y="209"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
       </Unit6>
       <Unit7>
         <Filename Value="..\src\lazglcontrol.pas"/>
@@ -109,8 +114,6 @@
         <Filename Value="C:\lazarus\components\opengl\openglcontext.pas"/>
         <UnitName Value="OpenGLContext"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="137"/>
-        <CursorPos X="25" Y="150"/>
         <UsageCount Value="10"/>
       </Unit11>
       <Unit12>
@@ -147,18 +150,20 @@
       <Unit16>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\gl.pp"/>
         <UnitName Value="GL"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="140"/>
-        <CursorPos X="3" Y="154"/>
+        <EditorIndex Value="6"/>
+        <TopLine Value="960"/>
+        <CursorPos X="3" Y="974"/>
         <UsageCount Value="11"/>
+        <Loaded Value="True"/>
       </Unit16>
       <Unit17>
         <Filename Value="C:\lazarus\lcl\graphics.pp"/>
         <UnitName Value="Graphics"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="1192"/>
-        <CursorPos X="5" Y="1205"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="1100"/>
+        <CursorPos X="56" Y="1120"/>
         <UsageCount Value="15"/>
+        <Loaded Value="True"/>
       </Unit17>
       <Unit18>
         <Filename Value="C:\lazarus\lcl\include\canvas.inc"/>
@@ -293,14 +298,14 @@
         <Filename Value="C:\lazarus\lcl\lcltype.pp"/>
         <UnitName Value="LCLType"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="1630"/>
-        <CursorPos X="12" Y="1644"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="10"/>
       </Unit36>
       <Unit37>
         <Filename Value="C:\lazarus\fpc\2.6.4\source\packages\opengl\src\glext.pp"/>
         <UnitName Value="GLext"/>
         <EditorIndex Value="-1"/>
+        <TopLine Value="3890"/>
+        <CursorPos X="13" Y="3913"/>
         <UsageCount Value="10"/>
       </Unit37>
       <Unit38>
@@ -323,6 +328,7 @@
         <UnitName Value="GLX"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="665"/>
+        <CursorPos X="26" Y="675"/>
         <UsageCount Value="10"/>
       </Unit40>
       <Unit41>
@@ -675,6 +681,99 @@
         <UsageCount Value="10"/>
       </Unit90>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="23" HistoryIndex="22">
+      <Position1>
+        <Filename Value="unitmain.pas"/>
+        <Caret Line="9" Column="12"/>
+      </Position1>
+      <Position2>
+        <Filename Value="..\lazglcontrol.pas"/>
+        <Caret Line="8" Column="36"/>
+      </Position2>
+      <Position3>
+        <Filename Value="..\lazglcontrol.pas"/>
+        <Caret Line="27" Column="30" TopLine="22"/>
+      </Position3>
+      <Position4>
+        <Filename Value="unitmain.pas"/>
+        <Caret Line="9" Column="12"/>
+      </Position4>
+      <Position5>
+        <Filename Value="..\lazglcontrol.pas"/>
+        <Caret Line="44" Column="21" TopLine="28"/>
+      </Position5>
+      <Position6>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="60" Column="35" TopLine="46"/>
+      </Position6>
+      <Position7>
+        <Filename Value="unitmain.pas"/>
+        <Caret Line="26" Column="21" TopLine="16"/>
+      </Position7>
+      <Position8>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="252" Column="10" TopLine="241"/>
+      </Position8>
+      <Position9>
+        <Filename Value="..\lazgl.pas"/>
+        <Caret Line="189" Column="15" TopLine="175"/>
+      </Position9>
+      <Position10>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="265" Column="28" TopLine="48"/>
+      </Position10>
+      <Position11>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="60" Column="34" TopLine="40"/>
+      </Position11>
+      <Position12>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="125" Column="5" TopLine="98"/>
+      </Position12>
+      <Position13>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="54" Column="8" TopLine="37"/>
+      </Position13>
+      <Position14>
+        <Filename Value="..\lazgl.pas"/>
+        <Caret Line="58" Column="8" TopLine="49"/>
+      </Position14>
+      <Position15>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="54" Column="8" TopLine="37"/>
+      </Position15>
+      <Position16>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="96" Column="57" TopLine="82"/>
+      </Position16>
+      <Position17>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="94" Column="62" TopLine="85"/>
+      </Position17>
+      <Position18>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="95" Column="69" TopLine="85"/>
+      </Position18>
+      <Position19>
+        <Filename Value="..\lazgltexture.pas"/>
+        <Caret Line="94" Column="64" TopLine="85"/>
+      </Position19>
+      <Position20>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="35" Column="21" TopLine="25"/>
+      </Position20>
+      <Position21>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="78" Column="35" TopLine="65"/>
+      </Position21>
+      <Position22>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="61" Column="63" TopLine="46"/>
+      </Position22>
+      <Position23>
+        <Filename Value="..\lazglcanvas.pas"/>
+        <Caret Line="78" Column="62" TopLine="64"/>
+      </Position23>
+    </JumpHistory>
   </ProjectSession>
 </CONFIG>

@@ -1,3 +1,20 @@
+(*
+Copyright (C) 2015 Derek John Evans
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*)
+
 unit LazGLTexture;
 
 {$MODE objfpc}{$H+}
@@ -34,7 +51,7 @@ var
 
 implementation
 
-uses  GL, GLU, LazGL, LCLType;
+uses  GL, GLext, GLU, LazGL, LCLType;
 
 constructor TLazTextureGL.Create(const ABitmap: TBitmap);
 begin
@@ -56,16 +73,14 @@ end;
 procedure TLazTextureGL.FPOObservedChanged(ASender: TObject; AOperation: TFPObservedOperation;
   AData: Pointer);
 begin
-  if AOperation = ooFree then
-  begin
+  if AOperation = ooFree then begin
     Free;
   end;
 end;
 
 procedure TLazTextureGL.Release;
 begin
-  if FTexture <> 0 then
-  begin
+  if FTexture <> 0 then begin
     glDeleteTextures(1, @FTexture);
     FTexture := 0;
   end;
@@ -76,8 +91,8 @@ begin
   Release;
   glGenTextures(1, @FTexture);
   glBindTexture(GL_TEXTURE_2D, FTexture);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-  glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+  //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+  //glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
   gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGBA, ABitmap.Width, ABitmap.Height,
     lglGetPixelFormat(ABitmap.PixelFormat), GL_UNSIGNED_BYTE, ABitmap.RawImage.Data);
 end;
@@ -86,8 +101,7 @@ procedure TLazTextureGL.FromBitmap(const ABitmap: TBitmap);
 var
   LBitmap: TBitmap;
 begin
-  if ABitmap.Transparent and (ABitmap.PixelFormat <> pf32bit) then
-  begin
+  if ABitmap.Transparent and (ABitmap.PixelFormat <> pf32bit) then begin
     LBitmap := lglBitmapCreate32(ABitmap);
     try
       Generate(LBitmap);
@@ -105,4 +119,5 @@ initialization
   GTextures := TTextures.Create;
 
 end.
+
 

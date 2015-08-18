@@ -1,3 +1,20 @@
+(*
+Copyright (C) 2015 Derek John Evans
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*)
+
 unit LazGLCanvas;
 
 {$MODE DELPHI}
@@ -15,7 +32,8 @@ type
     procedure DoLineTo(AX, AY: Integer); override;
     procedure DoLine(AX1, AY1, AX2, AY2: Integer); override;
     procedure DrawAsTexture(const ARect: TRect; const ABitmap: TBitmap);
-    procedure SetPixel(X, Y: Integer; AColor: TColor); override;
+    procedure SetPixel(AX, AY: Integer; AColor: TColor); override;
+    function GetPixel(AX, AY: Integer): TColor; override;
   public
     function TextExtent(const AText: String): TSize; override;
     procedure Draw(AX, AY: Integer; AGraphic: TGraphic); override;
@@ -40,7 +58,7 @@ type
 
 implementation
 
-uses GL, GraphMath, LazGL, LazGLTexture, LCLType, Math;
+uses GL, GLext, GraphMath, LazGL, LazGLTexture, LCLType, Math;
 
 procedure TLazGLCanvas.DrawAsTexture(const ARect: TRect; const ABitmap: TBitmap);
 var
@@ -55,11 +73,17 @@ begin
   lglDrawTexture(LTexture.TextureId, ARect);
 end;
 
-procedure TLazGLCanvas.SetPixel(X, Y: Integer; AColor: TColor);
+function TLazGLCanvas.GetPixel(AX, AY: Integer): TColor;
+begin
+  glReadPixels(AX, AY, 1, 1, GL_BGRA, GL_UNSIGNED_BYTE, @Result);
+  Result := Result and clWhite;
+end;
+
+procedure TLazGLCanvas.SetPixel(AX, AY: Integer; AColor: TColor);
 begin
   if lglSetColor(AColor) then begin
     glBegin(GL_POINTS);
-    glVertex2i(X, Y);
+    glVertex2i(AX, AY);
     glEnd();
   end;
 end;
@@ -269,11 +293,15 @@ end;
 
 procedure TLazGLCanvas.RoundRect(X1, Y1, X2, Y2: Integer; RX, RY: Integer);
 begin
-
+  if lglSetBrush(Brush) then begin
+    lglRoundRect(GL_TRIANGLE_FAN, Rect(X1, Y1, X2, Y2), RX, RY);
+  end;
+  if lglSetPen(Pen) then begin
+    lglRoundRect(GL_LINE_LOOP, Rect(X1, Y1, X2, Y2), RX, RY);
+  end;
 end;
 
 end.
-
 
 
 
